@@ -1,0 +1,119 @@
+/* 
+	Map description section on landing page
+*/
+
+.map-section {
+  margin: 0 0 6rem 0;
+}
+
+.map-section-heading {
+  margin: 0 0 3rem 0;
+  color: tomato;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.map-section-heading h3 {
+  text-shadow: 1px 1px 1px black;
+}
+
+.map-section-heading p {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.map-section-fruit-markers{
+  height: inherit;
+  width: inherit;
+  text-align: center;
+}
+
+.fruit-marker-container {
+  margin: 3rem 0 0.5rem 0;
+}
+
+.fruit-marker-container img {
+  height: 150px;
+  width: 150px;
+}
+
+.map-container {
+  position: relative;
+  max-width: 796px;
+  margin: auto;
+}
+
+.map-container .map-img {
+  height: auto;
+  max-width: 100%;
+  box-shadow: 3px 3px 10px grey;
+}
+
+.map-markers img {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  animation-name: bounce;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.map-markers .avocado {
+  top: 50%;
+  left: 60%;
+}
+
+.map-markers .peach {
+  top: 25%;
+  left: 20%;
+}
+
+.map-markers .blueberry {
+  top: 48%;
+  left: 42%;
+}
+
+.map-markers .limon {
+  top: 25%;
+  left: 40%;
+}
+
+.map-markers .kiwi {
+  top: 70%;
+  left: 35%;
+}
+
+.map-markers .cherry {
+  top: 20%;
+  left: 70%;
+}
+
+.map-markers .strawberry {
+  top: 53%;
+  left: 15%;
+}
+.map-markers .grapes {
+  top: 10%;
+  left: 55%;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

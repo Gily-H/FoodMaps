@@ -1,0 +1,89 @@
+/*
+  styling for section with tables containing produce offerings
+*/
+
+.produce-table-example-section {
+  margin: 4rem 0 6rem 0;
+  height: 100%;
+  max-width: 100%;
+}
+
+.table-data-heading {
+  padding: 3rem;
+  color: tomato;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.table-data-heading h3 {
+  text-shadow: 1px 1px 1px black;
+}
+
+.table-data-heading p {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.store-data-tables {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.store-data-tables table {
+  flex-shrink: 0;
+  flex-basis: 40%;
+  text-align: center;
+  border-collapse: collapse;
+  box-shadow: 3px 3px 10px grey;
+}
+
+.store-data-tables caption {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.store-data-tables td,
+th {
+  border: 1px solid black;
+}
+
+.store-data-tables td {
+  font-size: 1.3rem;
+  background-color: antiquewhite;
+}
+
+.store-data-tables th {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.fruit-table th {
+  background-color: maroon;
+}
+
+.veggie-table th {
+  background-color: darkolivegreen;
+}
+
+.store-data-tables img {
+  height: 100px;
+  width: 100px;
+  margin-top: 0.3rem;
+}
+
+.store-data-tables img:hover {
+  transition: 0.3s;
+  transform: scale(2);
+}
+
+@media (max-width: 900px) {
+  .store-data-tables {
+    flex-direction: column;
+  }
+  .veggie-table {
+    margin-top: 2rem;
+  }
+}

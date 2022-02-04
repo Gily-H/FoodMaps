@@ -1,0 +1,42 @@
+/* 
+  footer section
+*/
+
+footer {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:visited {
+  color:darkslateblue;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: red;
+}
+
+footer ol {
+  flex: 2;
+  padding: 2rem;
+}
+
+footer ul {
+  flex: 1;
+  padding: 2rem;
+  list-style: none;
+  text-align: center;
+}
+
+footer li {
+  padding: 0.3rem;
+}
