@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "../../styles/global/Footer.css";
 
 const Footer = () => {
@@ -18,34 +19,13 @@ const Footer = () => {
           <a href="https://www.freepik.com/vectors/food">Food vector created by freepik - www.freepik.com</a>
         </li>
       </ol>
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./maintenance.html">Map</a>
-        </li>
-        <li>
-          <a href="./maintenance.html">Resources</a>
-        </li>
-        <li>
-          <a href="./maintenance.html">Data</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="./maintenance.html">About Us</a>
-        </li>
-        <li>
-          <a href="./maintenance.html">Email</a>
-        </li>
-        <li>
-          <a href="./maintenance.html">Cisc 3141</a>
-        </li>
-        <li>
-          <a href="./maintenance.html">Gilman Huang</a>
-        </li>
-      </ul>
+
+      <nav>
+        <NavLink to="">Home</NavLink>
+        <NavLink to="">Map</NavLink>
+        <NavLink to="">Resources</NavLink>
+        <NavLink to="">Data</NavLink>
+      </nav>
     </footer>
   );
 };

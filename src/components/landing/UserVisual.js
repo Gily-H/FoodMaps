@@ -4,12 +4,12 @@ import "../../styles/landing/UserVisual.css";
 
 const UserVisual = () => {
   return (
-    <section class="user-section">
-      <div class="user-container">
-        <div class="family-img-container">
-          <img class="family-shopping" src={FAMILY_IMAGE} alt="family-shopping" />
+    <section className="user-section">
+      <div className="user-container">
+        <div className="family-img-container">
+          <img className="family-shopping" src={FAMILY_IMAGE} alt="family-shopping" />
         </div>
-        <div class="user-contribution-text">
+        <div className="user-contribution-text">
           <h2>We Need Your Help</h2>
           <br />
           <p>

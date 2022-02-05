@@ -3,22 +3,24 @@
 */
 
 .data-section {
-  margin: 4rem 0 8rem 0;
+  margin: 4rem 0 8rem;
 }
 
 .nyc-stats-heading {
   text-align: center;
-  width: 50%;
-  margin: 0 auto 4rem auto;
+  margin-bottom: 4rem;
 }
+
 .nyc-stats-heading h1 {
   color: red;
-  font-size: 6vw;
-  text-shadow: 1px 1px 1px black;
+  font-size: 5.5rem;
+  text-shadow: 0 0 1px black;
 }
 
 .nyc-stats-heading p {
   padding: 10px;
+  margin: 0 auto;
+  width: 60%;
   font-weight: bold;
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -27,33 +29,54 @@
 .nyc-stats-charts {
   display: flex;
   padding: 3rem;
-  width: 100%;
+  margin: 0 auto;
+  min-width: 1400px;
+  max-width: 80%;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .food-insecurity-chart {
-  display: block;
-  width: 45%;
-  height: 100%;
-  object-fit: cover;
+  flex: 1;
+  max-width: 40%;
   box-shadow: 3px 3px 10px grey;
 }
 
 .sufficient-standards-chart {
-  display: inline-block;
-  margin: 2rem;
-  width: 55%;
-  height: 100%;
-  object-fit: cover;
+  flex: 2;
+  max-width: 55%;
   box-shadow: 3px 3px 10px grey;
 }
 
-@media (max-width: 900px) {
+.food-insecurity-chart:hover {
+  transform: scale(1.5);
+}
+
+.sufficient-standards-chart:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 1420px) {
   .nyc-stats-charts {
     flex-direction: column;
     padding: 0;
+    min-width: 480px;
+  }
+  .food-insecurity-chart {
+    margin-bottom: 1.2rem;
+    min-width: 400px;
+  }
+  .sufficient-standards-chart {
+    min-width: 400px;
+  }
+  .food-insecurity-chart:hover {
+    transform: scale(1.2);
+  }
+
+  .sufficient-standards-chart:hover {
+    transform: scale(1.2);
   }
   .data-section {
-    margin: 4rem 0 4rem 0;
+    margin: 4rem 0;
   }
 }

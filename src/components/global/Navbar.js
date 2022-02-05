@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../../styles/global/Navbar.css";
 import LOGO from "../../images/homepage/logo.png";
 
@@ -7,21 +7,21 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="nav-list">
-        <li class="logo">
+        <li className="logo">
           <img src={LOGO} alt="logo" />
         </li>
-        <Link to="" className="nav-link">
+        <NavLink to="" className="nav-link">
           HOME
-        </Link>
-        <Link to="" className="nav-link">
+        </NavLink>
+        <NavLink to="" className="nav-link">
           MAP
-        </Link>
-        <Link to="" className="nav-link">
+        </NavLink>
+        <NavLink to="" className="nav-link">
           RESOURCES
-        </Link>
-        <Link to="" className="nav-link">
+        </NavLink>
+        <NavLink to="" className="nav-link">
           DATA
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );
