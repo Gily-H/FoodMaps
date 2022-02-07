@@ -6,10 +6,13 @@ import pomegranate from "./pomegranate.jpg";
 import stringBean from "./stringBeans.jpg";
 
 export const PRODUCE_IMAGES = [
-  {id: "artichoke", img: artichoke},
-  {id: "cilantro", img: cilantro},
-  {id: "honeydew", img: honeydew},
-  {id: "mango", img: mango},
-  {id: "pomegranate", img: pomegranate},
-  {id: "stringBean", img: stringBean},
-]
+  { id: "artichoke", img: artichoke },
+  { id: "cilantro", img: cilantro },
+  { id: "stringBean", img: stringBean },
+];
+
+export const FRUIT_IMAGES = [
+  { id: "honeydew", img: honeydew },
+  { id: "mango", img: mango },
+  { id: "pomegranate", img: pomegranate },
+];

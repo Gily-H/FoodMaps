@@ -10,16 +10,16 @@ const MapVisual = () => {
   ));
 
   return (
-    <section class="map-section">
-      <div class="map-section-heading">
+    <section className="map-section">
+      <div className="map-section-heading">
         <h3>Find hidden food resources in your local community</h3>
         <p>Use our customized map to navigate between local food resources</p>
       </div>
-      <div class="map-section-fruit-markers">
-        <div class="fruit-marker-container">{markerIcons}</div>
-        <div class="map-container">
-          <div class="map-markers">{mapIcons}</div>
-          <img class="map-img" src={MAP_IMAGE} alt="map of brooklyn" />
+      <div className="map-section-fruit-markers">
+        <div className="fruit-marker-container">{markerIcons}</div>
+        <div className="map-container">
+          <div className="map-markers">{mapIcons}</div>
+          <img className="map-img" src={MAP_IMAGE} alt="map of brooklyn" />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Footer } from "./components/global";
-import "./styles/global/index.css";
+import "./index.css";
 
 ReactDOM.render(
   <Router>
