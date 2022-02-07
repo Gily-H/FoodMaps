@@ -1,5 +1,5 @@
 import React from "react";
-import { Welcome, MapVisual, TableVisual, ChartVisual, UserVisual } from ".";
+import { Welcome, MapVisual, TableVisual, ChartVisual, UserVisual } from "../landing";
 
 const LandingPage = () => {
   return (
