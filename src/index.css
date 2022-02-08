@@ -8,6 +8,18 @@
   padding: 0;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /* Navbar */
 
 .navlink {
@@ -21,9 +33,13 @@
 }
 
 .add-store-input-label {
-  @apply block text-lg text-gray-600;
+  @apply block text-lg font-medium text-gray-600;
 }
 
-.add-store-inputs {
+.add-store-input-field {
   @apply p-2 w-full rounded-md bg-gray-100 placeholder-slate-500 focus:outline-none focus:ring-4 focus:ring-teal-200;
+}
+
+.required-field {
+  @apply text-red-500;
 }
