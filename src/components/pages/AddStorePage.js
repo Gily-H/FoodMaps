@@ -13,16 +13,34 @@ const AddStorePage = () => {
     image: "",
   });
 
-  const handleFormChange = (event) => {
+  const handleFormValOnChange = (event) => {
     setFormVals((prevFormVals) => ({
       ...prevFormVals,
       [event.target.name]: event.target.value,
     }));
   };
 
+  const handleNestedFormValOnChange = (event) => {
+    setFormVals((prevFormVals) => ({
+      ...prevFormVals,
+      address: {
+        ...prevFormVals.address,
+        [event.target.name]: event.target.value,
+      },
+    }));
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    console.log(formVals);
+  };
+
   return (
     <div className="max-w-6xl mx-auto">
-      <form className="w-3/4 mx-auto my-8 py-12 px-16 shadow-lg rounded-md border-solid border-slate-200 border-2 bg-white">
+      <form
+        className="w-3/4 mx-auto my-8 py-12 px-16 shadow-lg rounded-md border-solid border-slate-200 border-2 bg-white"
+        onSubmit={handleFormSubmit}>
         <div className="input-container">
           <label className="add-store-input-label" htmlFor="store-name">
             Store Name
@@ -33,7 +51,7 @@ const AddStorePage = () => {
             placeholder="Name"
             name="name"
             value={formVals.name}
-            onChange={handleFormChange}
+            onChange={handleFormValOnChange}
           />
         </div>
 
@@ -45,9 +63,9 @@ const AddStorePage = () => {
             className="add-store-inputs"
             id="store-address"
             placeholder="Street Address"
-            name="address.street"
+            name="street"
             value={formVals.address.street}
-            onChange={handleFormChange}
+            onChange={handleNestedFormValOnChange}
           />
         </div>
 
@@ -60,9 +78,9 @@ const AddStorePage = () => {
               className="add-store-inputs grow"
               id="store-city"
               placeholder="City"
-              name="address.city"
+              name="city"
               value={formVals.address.city}
-              onChange={handleFormChange}
+              onChange={handleNestedFormValOnChange}
             />
           </div>
 
@@ -74,9 +92,9 @@ const AddStorePage = () => {
               className="add-store-inputs"
               id="store-state"
               placeholder="State"
-              name="address.state"
+              name="state"
               value={formVals.address.state}
-              onChange={handleFormChange}
+              onChange={handleNestedFormValOnChange}
             />
           </div>
 
@@ -88,9 +106,9 @@ const AddStorePage = () => {
               className="add-store-inputs "
               id="store-zip"
               placeholder="Zip"
-              name="address.zip"
+              name="zip"
               value={formVals.address.zip}
-              onChange={handleFormChange}
+              onChange={handleNestedFormValOnChange}
             />
           </div>
         </div>
@@ -105,7 +123,7 @@ const AddStorePage = () => {
             placeholder="Description"
             name="description"
             value={formVals.description}
-            onChange={handleFormChange}
+            onChange={handleFormValOnChange}
           />
         </div>
 
@@ -119,7 +137,7 @@ const AddStorePage = () => {
             placeholder="Image"
             name="image"
             value={formVals.image}
-            onChange={handleFormChange}
+            onChange={handleFormValOnChange}
           />
         </div>
 
