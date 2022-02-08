@@ -3,8 +3,8 @@ import { LandingPage, AddStorePage } from "./components/pages";
 
 const App = () => {
   return (
-    // <AddStorePage />
-    <LandingPage/>
+    <AddStorePage />
+    // <LandingPage />
   );
 };
 

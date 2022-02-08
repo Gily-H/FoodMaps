@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+.navlink {
+  @apply flex-1 text-lg cursor-pointer;
+}
+
+/* Add store form */
+
+.input-container {
+  @apply mb-5;
+}
+
+.add-store-input-label {
+  @apply block text-lg text-gray-600;
+}
+
+.add-store-inputs {
+  @apply p-2 w-full rounded-md bg-gray-100 placeholder-slate-500 focus:outline-none focus:ring-4 focus:ring-teal-200;
+}
