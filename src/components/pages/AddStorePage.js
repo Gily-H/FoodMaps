@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { formatStringInput, isFormattedZip } from "../../utils/string-utils";
 
 const AddStorePage = () => {
   const [formVals, setFormVals] = useState({
@@ -38,10 +39,33 @@ const AddStorePage = () => {
     console.log(formVals);
   };
 
+  const validateForm = () => {
+    const { name, address, description, image } = formVals;
+
+    // validation name
+
+    // validation address
+
+    // validation city
+
+    // validation zip
+
+    // validate image url
+  };
+
+  const formatFormValues = (values) => {
+    const { name, address, description, image } = values;
+    const formattedValues = {}
+
+    formattedValues["name"] = formatStringInput(name)
+    formattedValues["description"] = formatStringInput(description)
+    
+  }
+
   return (
     <div className="max-w-screen-md mx-auto">
       <form
-        className="mx-4 pb-12 shadow-lg rounded-md border bg-white"
+        className="m-4 pb-12 shadow-lg rounded-md border bg-white"
         onSubmit={handleFormSubmit}>
         <h2 className="text-center mb-4 p-6 rounded-t-md text-3xl font-bold text-white bg-green-800">
           Add Store Form
@@ -101,7 +125,9 @@ const AddStorePage = () => {
             </div>
 
             <div className="w-32 mx-8">
-              <label className="add-store-input-label add-city-input" htmlFor="store-state">
+              <label
+                className="add-store-input-label add-city-input"
+                htmlFor="store-state">
                 State<span className="required-field">*</span>
               </label>
               <input
@@ -122,7 +148,7 @@ const AddStorePage = () => {
               </label>
               <input
                 className="add-store-input-field"
-                type="number"
+                type="text"
                 id="store-zip"
                 placeholder="Zip"
                 name="zip"
