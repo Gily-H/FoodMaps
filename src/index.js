@@ -7,9 +7,13 @@ import "./index.css";
 
 ReactDOM.render(
   <Router>
-    <Navbar />
-    <App />
-    <Footer />
+    <div className="flex flex-col justify-between min-h-screen">
+      <Navbar />
+      <main>
+        <App />
+      </main>
+      <Footer />
+    </div>
   </Router>,
   document.getElementById("root")
 );

@@ -6,8 +6,8 @@ const LandingPage = () => {
     <>
       <Welcome />
       <MapVisual />
-      <TableVisual />
-      <ChartVisual />
+      {/* <TableVisual /> */}
+      {/* <ChartVisual /> */}
       <UserVisual />
     </>
   );
