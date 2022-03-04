@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { formatStringInput, isFormattedZip } from "../../utils/string-utils";
+import { formatStringInput, isFormattedZip } from "../../utils/strings/formatter";
 
 const AddStorePage = () => {
   const [formVals, setFormVals] = useState({
@@ -55,12 +55,11 @@ const AddStorePage = () => {
 
   const formatFormValues = (values) => {
     const { name, address, description, image } = values;
-    const formattedValues = {}
+    const formattedValues = {};
 
-    formattedValues["name"] = formatStringInput(name)
-    formattedValues["description"] = formatStringInput(description)
-    
-  }
+    formattedValues["name"] = formatStringInput(name);
+    formattedValues["description"] = formatStringInput(description);
+  };
 
   return (
     <div className="max-w-screen-md mx-auto">
