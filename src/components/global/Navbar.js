@@ -15,22 +15,27 @@ const Navbar = () => {
       <nav className="h-12 bg-green-800 shadow-lg">
         <ul className="flex h-full items-center justify-around max-w-5xl mx-auto text-center font-bold text-slate-100 ">
           <li>
-            <NavLink to="" className="navlink">
+            <NavLink to="/" className="navlink">
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="" className="navlink">
+            <NavLink to="map" className="navlink">
               MAP
             </NavLink>
           </li>
           <li>
-            <NavLink to="" className="navlink">
+            <NavLink to="stores-dashboard" className="navlink">
+              STORES
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="resources" className="navlink">
               RESOURCES
             </NavLink>
           </li>
           <li>
-            <NavLink to="" className="navlink">
+            <NavLink to="data" className="navlink">
               DATA
             </NavLink>
           </li>

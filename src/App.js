@@ -1,10 +1,14 @@
 import React from "react";
-import { LandingPage, AddStorePage } from "./components/pages";
+import { Routes, Route } from "react-router-dom";
+import { LandingPage, AddStorePage, StoresListPage } from "./components/pages";
 
 const App = () => {
   return (
-    <AddStorePage />
-    // <LandingPage />
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="stores-dashboard" element={<StoresListPage />} />
+      <Route path="add-store-form" element={<AddStorePage />} />
+    </Routes>
   );
 };
 
